@@ -21,6 +21,9 @@ function bn_show(){
     } else if (i=='1'){
       i = "2";
     }
+    else if (i=='2'){
+      i = "3";
+    }
     return '<a class="dot">'+i+'</a>';
       }
   });  
