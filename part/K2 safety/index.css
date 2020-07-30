@@ -769,7 +769,11 @@ margin-left:20px;
 }
 /* 2차 메뉴 아이템 끝*/
 
-
+.bn-slider-box {
+ 
+  width: 95%;
+  margin: 0 auto;
+}
 
 .bn-slider-box .slider-1{  
   padding:0 40px; 
@@ -796,13 +800,18 @@ background-color:white;
     right: 50%;
   
 }
-
+.bn-slider-box .slider-1 .slick-track{
+  border: 1px solid red;
+  overflow: hidden;
+  margin-right: 0;  
+}
 
 
 /*하단 슬라이더 시작*/
 .main_product{
   margin-top: 92px;
   text-align: center;
+  border: 1px solid gold;
 }
 .main_product > .wrp_holder >h1{
     font-size: 46px;
@@ -833,24 +842,25 @@ text-align:center;
 }
 
 .main_product > .item_tab{
-margin: 23px 0 58px 0;
+margin: 23px auto 58px auto;
+max-width:1400px;
 border:1px solid red;
 justify-content: center;
 }
-.main_product > .item_tab >ul{
+.main_product > .item_tab >.item-name{
 font-size: 18px;
 color: #333;
 text-decoration: none;
 }
-.main_product > .item_tab > ul > li{
+.main_product > .item_tab > .item-name > li{
   position: relative;
   padding: 0 32px;
-}
-.main_product > .item_tab > ul > li:first-child::before{
+ }
+.main_product > .item_tab > .item-name >li:first-child::before{
   content: "";
-  display: none;
+  display: none;s
 }
-.main_product > .item_tab > ul > li::before{
+.main_product > .item_tab > .item-name>li::before{
   content: "";
   position: absolute;
   top:50%;
@@ -858,18 +868,19 @@ text-decoration: none;
   margin-top: -3px;
   width: 6px;
     height: 6px;
-    background-color: #e6e6e6;
+    background-color:  #e6e6e6;;
     border-radius: 100%;
 }
 
 
 /*하단 슬라이더 시작*/
-.main_product>.item_tab>.slick-dots{
-  max-width:1400px;
+.main_product>.item_tab>.slider-2{
+  
+  border:1px solid blue;
   
 }
 .main_product>.item_tab>.slick-dots li a{
-  width:auto;
+ 
   display:block;
   border:1px solid red;
 }
@@ -886,4 +897,19 @@ text-decoration: none;
 }
 .main_product>.item_tab>.slider-2 .slider-imgbox >a>img{
   width:320px;
+}
+
+
+
+.main-product .prod-box-1 .item > .img-box::after {
+  content:"";
+  display:block;
+  padding-top:150%;
+}
+
+.main-product  .prod-box-1 .item > .img-box {
+  position:relative;
+  border: 1px solid #efefef;
+  transition: box-shadow 1s;
+  overflow: hidden;
 }
