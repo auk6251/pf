@@ -29,12 +29,3 @@ function bn_show(){
   });  
 }
 bn_show();
-/*
-$('.main_product>.item_tab > .slider-2').slick({
-  dots:true,
-   arrows:false,
-  customPaging: function(slider, i) {
-    return $(slider.$slides[i]).find('.page').html();
-  }
-});
-*/ 
