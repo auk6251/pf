@@ -29,3 +29,23 @@ function bn_show(){
   });  
 }
 bn_show();
+
+
+$(function () {
+  function ProdBox1__init() {
+      $('.prod-box-1 > .owl-carousel').owlCarousel({
+          responsive: {
+              0: {
+                  items: 4
+              }
+          },
+          margin: 30,
+          loop: true,
+          dots: false,
+          nav: true,
+          navText: ['←', '→']
+      });
+  }
+  ProdBox1__init();
+
+});
